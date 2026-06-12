@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henrique Vieira Guia de Turismo</title>
+    <meta name="description"
+        content="Explore a riqueza cultural e rural com o Henrique, seu guia local para roteiros gastronômicos, fazendas históricas e experiências autênticas.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Preload hero image for LCP -->
+    <link rel="preload" as="image" href="assets/hero_cultural_premium_1779234977188.png">
+    <!-- Open Graph / SEO -->
+    <link rel="canonical" href="https://example.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Henrique Vieira Guia de Turismo">
+    <meta property="og:description"
+        content="Explore a riqueza cultural e rural com o Henrique, seu guia local para roteiros gastronômicos, fazendas históricas e experiências autênticas.">
+    <meta property="og:image" content="assets/hero_cultural_premium_1779234977188.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#1A3021">
+    <!-- JSON-LD SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristGuide",
+      "name": "Henrique Vieira - Guia Cultural",
+      "description": "Explore a riqueza cultural e rural com o Henrique, seu guia local para roteiros gastronômicos, fazendas históricas e experiências autênticas.",
+      "image": "https://example.com/assets/hero_cultural_premium_1779234977188.png",
+      "url": "https://example.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Região Serrana",
+        "addressRegion": "RJ",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader__logo">Henrique Vieira</div>
+    </div>
+    <!-- Navbar -->
+    <header id="header" class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo__name" style="font-size: 1.1rem;">Henrique Vieira<br><small>Guia de Turismo</small></span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#sobre" class="nav__link">Sobre Mim</a></li>
+                    <li class="nav__item"><a href="#servicos" class="nav__link">Experiências</a></li>
+                    <li class="nav__item"><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+                    <li class="nav__item"><a href="#galeria" class="nav__link">Galeria</a></li>
+                    <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
+                    <li class="nav__item">
+                        <a href="https://instagram.com/hvs_tourist_guide_climber_2" class="nav__link nav__instagram"
+                            target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="#contato" class="btn btn--primary btn--small">Fale Comigo</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__bg">
+                <img src="assets/hero_cultural_premium_1779234977188.png" alt="Henrique Guia Cultural" class="hero__img"
+                    loading="eager">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__container container grid">
+                <div class="hero__data">
+                    <span class="hero__subtitle">Bem-vindo à Tradição</span>
+                    <h1 class="hero__title">Explore a Cultura e a Natureza com a <span>alma</span> de quem vive nela.
+                    </h1>
+                    <p class="hero__description">Roteiros gastronômicos, cervejarias artesanais, queijos premiados e
+                        vivências rurais autênticas. Venha criar memórias que durarão a vida toda.</p>
+                    <div class="hero__buttons">
+                        <a href="#contato" class="btn btn--primary">Agendar Experiência</a>
+                        <a href="#servicos" class="btn btn--secondary">Ver Roteiros <i
+                                class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mim Section -->
+        <section class="sobre section" id="sobre">
+            <div class="sobre__container container grid">
+                <div class="sobre__img-wrapper">
+                    <img src="assets/sobre_mim.jpg" alt="Henrique no turismo rural" class="sobre__img" loading="lazy">
+                    <div class="sobre__badge">
+                        <img src="assets/cadastur.png" alt="Cadastur — Credenciado" class="sobre__badge-img">
+                        <span>Guia<br>Credenciado</span>
+                    </div>
+                </div>
+                <div class="sobre__data">
+                    <h2 class="section__title">Seu Guia Cultural</h2>
+                    <p class="sobre__description">
+                        Olá! Eu sou o Henrique. Sou apaixonado pelas raízes, sabores e histórias da nossa terra, e meu
+                        propósito é te levar para uma imersão completa no turismo rural e gastronômico.
+                    </p>
+                    <p class="sobre__description">
+                        Meu foco não é apenas te guiar em um trajeto, mas proporcionar experiências de degustação,
+                        aprendizado em fazendas históricas e conexão com a cultura viva de forma rica e acolhedora.
+                        Adapto cada passeio para que seja inesquecível e focado no seu interesse.
+                    </p>
+                    <div class="sobre__stats">
+                        <div class="stat__item">
+                            <h3 class="stat__number">25+</h3>
+                            <span class="stat__text">Fazendas<br>Parceiras</span>
+                        </div>
+                        <div class="stat__item">
+                            <h3 class="stat__number">100%</h3>
+                            <span class="stat__text">Cultura<br>Garantida</span>
+                        </div>
+                        <div class="stat__item">
+                            <h3 class="stat__number">80+</h3>
+                            <span class="stat__text">Roteiros<br>Mapeados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiências (Serviços) -->
+        <section class="servicos section" id="servicos">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">O que oferecemos</span>
+                    <h2 class="section__title">Experiências e Aventuras</h2>
+                    <p class="section__description">Atendemos em toda a região com flexibilidade total para tornar seu
+                        dia perfeito.</p>
+                </div>
+                <div class="servicos__container grid">
+                    <!-- Serviço 1 -->
+                    <article class="servico__card">
+                        <div class="servico__icon">
+                            <i class='bx bx-drink'></i>
+                        </div>
+                        <h3 class="servico__title">Rota Cervejeira</h3>
+                        <p class="servico__description">Visita às melhores cervejarias artesanais da região, com
+                            degustação guiada e imersão na cultura cervejeira local.</p>
+                    </article>
+                    <!-- Serviço 2 -->
+                    <article class="servico__card">
+                        <div class="servico__icon">
+                            <i class='bx bx-restaurant'></i>
+                        </div>
+                        <h3 class="servico__title">Rota do Queijo</h3>
+                        <p class="servico__description">Conheça fazendas produtoras de queijos artesanais premiados,
+                            entenda o processo de cura e saboreie produtos únicos.</p>
+                    </article>
+                    <!-- Serviço 3 -->
+                    <article class="servico__card">
+                        <div class="servico__icon">
+                            <i class='bx bx-book-open'></i>
+                        </div>
+                        <h3 class="servico__title">Turismo Pedagógico</h3>
+                        <p class="servico__description">Roteiros educativos nacionais e internacionais voltados para
+                            estudantes e grupos, com foco em história e práticas sustentáveis.</p>
+                    </article>
+                    <!-- Serviço 4 -->
+                    <article class="servico__card">
+                        <div class="servico__icon">
+                            <i class='bx bx-home-heart'></i>
+                        </div>
+                        <h3 class="servico__title">Turismo Rural</h3>
+                        <p class="servico__description">Uma imersão na vida do campo, com visitas a antigas fazendas,
+                            colheitas e um mergulho nas tradições do interior.</p>
+                    </article>
+                    <!-- Serviço 5 -->
+                    <article class="servico__card" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
+                        <div class="servico__icon">
+                            <i class='bx bx-camera'></i>
+                        </div>
+                        <h3 class="servico__title">Observação de Aves</h3>
+                        <p class="servico__description">Caminhadas silenciosas pelas matas nativas para avistar e
+                            fotografar a rica biodiversidade de pássaros da nossa região.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais -->
+        <section class="diferenciais section" id="diferenciais">
+            <div class="container">
+                <div class="section__header text-center">
+                    <h2 class="section__title">Por que me Escolher?</h2>
+                </div>
+                <div class="diferenciais__container grid">
+                    <div class="diferencial__card">
+                        <i class='bx bxs-heart'></i>
+                        <h3 class="diferencial__title">Alegria e Paixão</h3>
+                        <p>Atendimento genuíno e energia contagiante. Comigo, todo passeio é uma festa.</p>
+                    </div>
+                    <div class="diferencial__card">
+                        <i class='bx bxs-map-alt'></i>
+                        <h3 class="diferencial__title">Conhecimento Local</h3>
+                        <p>Acesso aos segredos e cantinhos que apenas os moradores de verdade conhecem.</p>
+                    </div>
+                    <div class="diferencial__card">
+                        <i class='bx bxs-customize'></i>
+                        <h3 class="diferencial__title">Roteiros Personalizados</h3>
+                        <p>Andamos no seu ritmo. Adaptamos as rotas de acordo com a sua experiência e disposição.</p>
+                    </div>
+                    <div class="diferencial__card">
+                        <i class='bx bx-shield-quarter'></i>
+                        <h3 class="diferencial__title">Segurança e Credibilidade</h3>
+                        <p>Guia credenciado pelo Cadastur. Segurança em primeiro lugar sempre.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section class="galeria section" id="galeria">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">Paisagens</span>
+                    <h2 class="section__title">Galeria de Momentos</h2>
+                </div>
+                <div class="galeria__container grid">
+                    <img src="assets/rota_cervejeira_1779235020895.png" alt="Rota Cervejeira" class="galeria__img"
+                        loading="lazy">
+                    <img src="assets/rota_do_queijo_1779235067915.png" alt="Rota do Queijo na Fazenda"
+                        class="galeria__img" loading="lazy">
+                    <img src="assets/observacao_aves_1779235850294.png" alt="Observação de Aves"
+                        class="galeria__img galeria__img--large" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section class="depoimentos section" id="depoimentos">
+            <div class="container">
+                <h2 class="section__title text-center">O Que Dizem Quem Viajou Comigo</h2>
+                <div class="depoimentos__slider">
+                    <div class="depoimento__card">
+                        <div class="depoimento__quote"><i class='bx bxs-quote-alt-left'></i></div>
+                        <p class="depoimento__text">"O Henrique fez nossa experiência ser inesquecível! A rota
+                            cervejeira e a visita à fazenda de queijos foram incríveis, cheias de história e sabores
+                            maravilhosos."</p>
+                        <div class="depoimento__author">
+                            <img src="assets/avatar_1_1778715571372.png" alt="Cliente feliz" class="depoimento__img"
+                                loading="lazy">
+                            <div>
+                                <h4 class="depoimento__name">Mariana Silva</h4>
+                                <span class="depoimento__role">Rota Gastronômica</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimento__card">
+                        <div class="depoimento__quote"><i class='bx bxs-quote-alt-left'></i></div>
+                        <p class="depoimento__text">"A viagem de turismo rural com observação de aves mudou nossa
+                            perspectiva. Aprender sobre a fauna local com tanto cuidado e conhecimento foi mágico."</p>
+                        <div class="depoimento__author">
+                            <div class="depoimento__avatar-placeholder">RC</div>
+                            <div>
+                                <h4 class="depoimento__name">Rafael Costa</h4>
+                                <span class="depoimento__role">Turismo Rural</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq section" id="faq">
+            <div class="container">
+                <h2 class="section__title">Dúvidas Frequentes</h2>
+                <div class="accordion__container">
+                    <div class="accordion__item">
+                        <button class="accordion__header" aria-expanded="false" aria-controls="accordion-content-1"
+                            id="accordion-header-1">
+                            <h3 class="accordion__title">Você atende apenas em Teresópolis?</h3>
+                            <i class='bx bx-chevron-down accordion__icon' aria-hidden="true"></i>
+                        </button>
+                        <div class="accordion__content" id="accordion-content-1" role="region"
+                            aria-labelledby="accordion-header-1">
+                            <p class="accordion__description">Não! Minha base é em Teresópolis, mas atendo em toda a
+                                Região Serrana (Nova Friburgo, Petrópolis, Guapimirim, etc). Basta combinarmos a
+                                logística.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header" aria-expanded="false" aria-controls="accordion-content-2"
+                            id="accordion-header-2">
+                            <h3 class="accordion__title">Preciso de experiência para a Observação de Aves?</h3>
+                            <i class='bx bx-chevron-down accordion__icon' aria-hidden="true"></i>
+                        </button>
+                        <div class="accordion__content" id="accordion-content-2" role="region"
+                            aria-labelledby="accordion-header-2">
+                            <p class="accordion__description">De forma alguma! A observação de aves é para todas as
+                                idades e níveis. Eu ensino como usar equipamentos básicos e como identificar as
+                                espécies.</p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header" aria-expanded="false" aria-controls="accordion-content-3"
+                            id="accordion-header-3">
+                            <h3 class="accordion__title">Preciso levar algum equipamento específico?</h3>
+                            <i class='bx bx-chevron-down accordion__icon' aria-hidden="true"></i>
+                        </button>
+                        <div class="accordion__content" id="accordion-content-3" role="region"
+                            aria-labelledby="accordion-header-3">
+                            <p class="accordion__description">Apenas roupas confortáveis, tênis apropriado e proteção
+                                solar. O que for específico da trilha (como itens de segurança), eu providencio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contato section" id="contato">
+            <div class="container">
+                <div class="contato__centered">
+                    <h2 class="section__title">Vamos Conversar?</h2>
+                    <p class="contato__description">Pronto para viver uma aventura inesquecível na Região Serrana?
+                        Entre em contato diretamente pelo WhatsApp ou Instagram e vamos montar o seu roteiro perfeito!
+                    </p>
+                    <div class="contato__socials">
+                        <a href="https://wa.me/5521971677158" class="contato__social-btn contato__whatsapp"
+                            target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                            <i class='bx bxl-whatsapp'></i>
+                        </a>
+                        <a href="https://instagram.com/hvs_tourist_guide_climber_2"
+                            class="contato__social-btn contato__instagram" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram">
+                            <i class='bx bxl-instagram'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid footer__container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <span class="logo__name" style="font-size: 1.2rem;">Henrique Vieira</span>
+                </a>
+                <p class="footer__description">Explorando as raízes, os sabores e a verdadeira alma da Região Serrana através de experiências autênticas e roteiros personalizados de alto padrão.</p>
+                <div class="footer__social">
+                    <a href="https://instagram.com/hvs_tourist_guide_climber_2" target="_blank" class="footer__social-link"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/5521971677158" target="_blank" class="footer__social-link"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+            
+            <div class="footer__content">
+                <h3 class="footer__title">Nossos Roteiros</h3>
+                <ul class="footer__links">
+                    <li><a href="#servicos" class="footer__link">Rota Cervejeira</a></li>
+                    <li><a href="#servicos" class="footer__link">Rota do Queijo</a></li>
+                    <li><a href="#servicos" class="footer__link">Turismo Rural</a></li>
+                    <li><a href="#servicos" class="footer__link">Observação de Aves</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Informações</h3>
+                <ul class="footer__links">
+                    <li><a href="#sobre" class="footer__link">Sobre o Guia</a></li>
+                    <li><a href="#faq" class="footer__link">Dúvidas Frequentes</a></li>
+                    <li><a href="#galeria" class="footer__link">Nossa Galeria</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copy-wrap">
+            <p class="footer__copy">&#169; Henrique Vieira Guia de Turismo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Social Buttons -->
+    <a href="https://wa.me/5521971677158" class="social-float whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Fale conosco no WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
