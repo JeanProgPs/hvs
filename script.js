@@ -134,9 +134,11 @@ window.addEventListener('load', () => {
    ========================================= */
 const routeImages = {
     cultural: [
-        { src: 'assets/Cultural1.jpeg', alt: 'Turismo Cultural 1' },
-        { src: 'assets/cultural2.jpeg', alt: 'Turismo Cultural 2' },
-        { src: 'assets/Cultural3.jpeg', alt: 'Turismo Cultural 3' }
+        { src: 'assets/Cultural1.png', alt: 'Turismo Cultural 1' },
+        { src: 'assets/cultural2.png', alt: 'Turismo Cultural 2' },
+        { src: 'assets/cultural3.png', alt: 'Turismo Cultural 3' },
+        { src: 'assets/cultural4.png', alt: 'Turismo Cultural 4' },
+        { src: 'assets/cultural5.png', alt: 'Turismo Cultural 5' }
     ],
     cervejeira: [
         { src: 'assets/cervejeira1.png', alt: 'Rota Cervejeira - Degustação' },
