@@ -139,11 +139,11 @@ const routeImages = {
         { src: 'assets/Cultural3.jpeg', alt: 'Turismo Cultural 3' }
     ],
     cervejeira: [
-        { src: 'assets/rota_cervejeira_1779235020895.png', alt: 'Rota Cervejeira - Degustação' },
+        { src: 'assets/cervejeira1.png', alt: 'Rota Cervejeira - Degustação' },
         { src: 'assets/galeria_1_1778714689003.png', alt: 'Cervejaria Artesanal' }
     ],
     queijo: [
-        { src: 'assets/rota_do_queijo_1779235067915.png', alt: 'Rota do Queijo - Degustação' },
+        { src: 'assets/queijo1.png', alt: 'Rota do Queijo - Degustação' },
         { src: 'assets/galeria_2_1778714859729.png', alt: 'Fazenda de Queijos' }
     ],
     pedagogico: [
@@ -155,7 +155,8 @@ const routeImages = {
         { src: 'assets/hero_cultural_premium_1779234977188.png', alt: 'Vivência no Campo' }
     ],
     aves: [
-        { src: 'assets/observacao_aves_1779235850294.png', alt: 'Observação de Aves na Mata' },
+        { src: 'assets/aves1.png', alt: 'Observação de Aves na Mata' },
+        { src: 'assets/aves2.png', alt: 'Observação de Aves 2' },
         { src: 'assets/galeria1.jpg', alt: 'Biodiversidade Local' }
     ]
 };
