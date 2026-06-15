@@ -149,8 +149,8 @@ const routeImages = {
         { src: 'assets/galeria_2_1778714859729.png', alt: 'Fazenda de Queijos' }
     ],
     pedagogico: [
-        { src: 'assets/turismo_pedagogico_1779235900196.png', alt: 'Turismo Pedagógico' },
-        { src: 'assets/galeria_3_1778715173962.png', alt: 'Grupo em Atividade' }
+        { src: 'assets/pedagogia1.png', alt: 'Turismo Pedagógico' },
+        { src: 'assets/pedagogia2.png', alt: 'Grupo em Atividade' }
     ],
     rural: [
         { src: 'assets/sobre_mim.jpg', alt: 'Turismo Rural - Fazenda' },
