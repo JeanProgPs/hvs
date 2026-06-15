@@ -133,6 +133,10 @@ window.addEventListener('load', () => {
    MODAL DE FOTOS DA ROTA
    ========================================= */
 const routeImages = {
+    cultural: [
+        { src: 'assets/hero.png', alt: 'Turismo Cultural - Monumento' },
+        { src: 'assets/hero_cultural_premium_1779234977188.png', alt: 'Cultura Local' }
+    ],
     cervejeira: [
         { src: 'assets/rota_cervejeira_1779235020895.png', alt: 'Rota Cervejeira - Degustação' },
         { src: 'assets/galeria_1_1778714689003.png', alt: 'Cervejaria Artesanal' }
@@ -156,6 +160,7 @@ const routeImages = {
 };
 
 const routeTitles = {
+    cultural: "Fotos: Turismo Cultural",
     cervejeira: "Fotos: Rota Cervejeira",
     queijo: "Fotos: Rota do Queijo",
     pedagogico: "Fotos: Turismo Pedagógico",
