@@ -497,11 +497,15 @@ img {
    Servicos
    ========================================= */
 .servicos__container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
 }
 
 .servico__card {
+    flex: 1 1 300px;
+    max-width: 350px;
     background-color: var(--container-color);
     padding: 3rem 2rem;
     border-radius: var(--radius-md);
