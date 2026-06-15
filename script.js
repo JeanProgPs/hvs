@@ -126,5 +126,102 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             preloader.style.display = 'none';
         }, 800);
+});
+
+/* =========================================
+   MODAL DE FOTOS DA ROTA
+   ========================================= */
+const routeImages = {
+    cervejeira: [
+        { src: 'assets/rota_cervejeira_1779235020895.png', alt: 'Rota Cervejeira - Degustação' },
+        { src: 'assets/galeria_1_1778714689003.png', alt: 'Cervejaria Artesanal' }
+    ],
+    queijo: [
+        { src: 'assets/rota_do_queijo_1779235067915.png', alt: 'Rota do Queijo - Degustação' },
+        { src: 'assets/galeria_2_1778714859729.png', alt: 'Fazenda de Queijos' }
+    ],
+    pedagogico: [
+        { src: 'assets/turismo_pedagogico_1779235900196.png', alt: 'Turismo Pedagógico' },
+        { src: 'assets/galeria_3_1778715173962.png', alt: 'Grupo em Atividade' }
+    ],
+    rural: [
+        { src: 'assets/sobre_mim.jpg', alt: 'Turismo Rural - Fazenda' },
+        { src: 'assets/hero_cultural_premium_1779234977188.png', alt: 'Vivência no Campo' }
+    ],
+    aves: [
+        { src: 'assets/observacao_aves_1779235850294.png', alt: 'Observação de Aves na Mata' },
+        { src: 'assets/galeria1.jpg', alt: 'Biodiversidade Local' }
+    ]
+};
+
+const routeTitles = {
+    cervejeira: "Fotos: Rota Cervejeira",
+    queijo: "Fotos: Rota do Queijo",
+    pedagogico: "Fotos: Turismo Pedagógico",
+    rural: "Fotos: Turismo Rural",
+    aves: "Fotos: Observação de Aves"
+};
+
+const modal = document.getElementById('photo-modal');
+const modalOverlay = document.getElementById('modal-overlay');
+const modalClose = document.getElementById('modal-close');
+const modalTitle = document.getElementById('modal-title');
+const modalGallery = document.getElementById('modal-gallery');
+const btnFotos = document.querySelectorAll('.servico__btn-fotos');
+
+const openModal = (route) => {
+    // Set Title
+    modalTitle.textContent = routeTitles[route] || "Fotos da Rota";
+    
+    // Clear old images
+    modalGallery.innerHTML = '';
+    
+    // Inject new images
+    const images = routeImages[route];
+    if (images && images.length > 0) {
+        images.forEach(imgData => {
+            const imgEl = document.createElement('img');
+            imgEl.src = imgData.src;
+            imgEl.alt = imgData.alt;
+            imgEl.loading = 'lazy';
+            modalGallery.appendChild(imgEl);
+        });
+    } else {
+        modalGallery.innerHTML = '<p style="text-align: center; color: var(--text-color-light);">Nenhuma foto disponível no momento.</p>';
+    }
+    
+    // Show Modal
+    modal.classList.add('show-modal');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+};
+
+const closeModal = () => {
+    modal.classList.remove('show-modal');
+    document.body.style.overflow = ''; // Restore scrolling
+};
+
+// Event Listeners for Buttons
+btnFotos.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const route = btn.getAttribute('data-route');
+        if (route) {
+            openModal(route);
+        }
+    });
+});
+
+// Event Listeners for Closing Modal
+if (modalClose) {
+    modalClose.addEventListener('click', closeModal);
+}
+if (modalOverlay) {
+    modalOverlay.addEventListener('click', closeModal);
+}
+
+// Close on Escape Key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('show-modal')) {
+        closeModal();
     }
 });

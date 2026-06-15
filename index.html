@@ -165,6 +165,7 @@
                         <h3 class="servico__title">Rota Cervejeira</h3>
                         <p class="servico__description">Visita às melhores cervejarias artesanais da região, com
                             degustação guiada e imersão na cultura cervejeira local.</p>
+                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="cervejeira" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
                     <!-- Serviço 2 -->
                     <article class="servico__card">
@@ -174,6 +175,7 @@
                         <h3 class="servico__title">Rota do Queijo</h3>
                         <p class="servico__description">Conheça fazendas produtoras de queijos artesanais premiados,
                             entenda o processo de cura e saboreie produtos únicos.</p>
+                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="queijo" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
                     <!-- Serviço 3 -->
                     <article class="servico__card">
@@ -183,6 +185,7 @@
                         <h3 class="servico__title">Turismo Pedagógico</h3>
                         <p class="servico__description">Roteiros educativos nacionais e internacionais voltados para
                             estudantes e grupos, com foco em história e práticas sustentáveis.</p>
+                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="pedagogico" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
                     <!-- Serviço 4 -->
                     <article class="servico__card">
@@ -192,6 +195,7 @@
                         <h3 class="servico__title">Turismo Rural</h3>
                         <p class="servico__description">Uma imersão na vida do campo, com visitas a antigas fazendas,
                             colheitas e um mergulho nas tradições do interior.</p>
+                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="rural" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
                     <!-- Serviço 5 -->
                     <article class="servico__card" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto;">
@@ -201,6 +205,7 @@
                         <h3 class="servico__title">Observação de Aves</h3>
                         <p class="servico__description">Caminhadas silenciosas pelas matas nativas para avistar e
                             fotografar a rica biodiversidade de pássaros da nossa região.</p>
+                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="aves" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
                 </div>
             </div>
@@ -404,6 +409,18 @@
         aria-label="Fale conosco no WhatsApp">
         <i class='bx bxl-whatsapp'></i>
     </a>
+
+    <!-- Modal de Fotos -->
+    <div id="photo-modal" class="modal">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close" aria-label="Fechar Modal"><i class='bx bx-x'></i></button>
+            <h3 class="modal__title" id="modal-title">Fotos da Rota</h3>
+            <div class="modal__gallery" id="modal-gallery">
+                <!-- Imagens serão injetadas aqui -->
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="script.js" defer></script>
