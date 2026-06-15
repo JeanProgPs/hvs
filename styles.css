@@ -1197,3 +1197,41 @@ img {
     transform: scale(1.03);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+
+/* =========================================
+   Fullscreen Image Modal
+   ========================================= */
+.fullscreen-modal {
+    z-index: 1100;
+}
+
+.fullscreen-modal .modal__overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.fullscreen-image {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
+    z-index: 10;
+    position: relative;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    transform: scale(0.95);
+    transition: var(--transition);
+}
+
+.fullscreen-modal.show-modal .fullscreen-image {
+    transform: scale(1);
+}
+
+.fullscreen-close {
+    z-index: 20;
+    color: #fff;
+    top: 1.5rem;
+    right: 2rem;
+}
+
+.fullscreen-close:hover {
+    color: var(--first-color);
+}

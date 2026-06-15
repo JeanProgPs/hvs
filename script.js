@@ -179,6 +179,25 @@ const modalTitle = document.getElementById('modal-title');
 const modalGallery = document.getElementById('modal-gallery');
 const btnFotos = document.querySelectorAll('.servico__btn-fotos');
 
+// Fullscreen Modal variables
+const fullscreenModal = document.getElementById('fullscreen-modal');
+const fullscreenOverlay = document.getElementById('fullscreen-overlay');
+const fullscreenClose = document.getElementById('fullscreen-close');
+const fullscreenImage = document.getElementById('fullscreen-image');
+
+const openFullscreen = (src, alt) => {
+    fullscreenImage.src = src;
+    fullscreenImage.alt = alt;
+    fullscreenModal.classList.add('show-modal');
+};
+
+const closeFullscreen = () => {
+    fullscreenModal.classList.remove('show-modal');
+};
+
+if (fullscreenClose) fullscreenClose.addEventListener('click', closeFullscreen);
+if (fullscreenOverlay) fullscreenOverlay.addEventListener('click', closeFullscreen);
+
 const openModal = (route) => {
     // Set Title
     modalTitle.textContent = routeTitles[route] || "Fotos da Rota";
@@ -194,6 +213,10 @@ const openModal = (route) => {
             imgEl.src = imgData.src;
             imgEl.alt = imgData.alt;
             imgEl.loading = 'lazy';
+            imgEl.style.cursor = 'pointer';
+            imgEl.addEventListener('click', () => {
+                openFullscreen(imgData.src, imgData.alt);
+            });
             modalGallery.appendChild(imgEl);
         });
     } else {
@@ -231,7 +254,11 @@ if (modalOverlay) {
 
 // Close on Escape Key
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && modal && modal.classList.contains('show-modal')) {
-        closeModal();
+    if (e.key === 'Escape') {
+        if (fullscreenModal && fullscreenModal.classList.contains('show-modal')) {
+            closeFullscreen();
+        } else if (modal && modal.classList.contains('show-modal')) {
+            closeModal();
+        }
     }
 });
