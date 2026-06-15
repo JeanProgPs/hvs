@@ -54,7 +54,7 @@ accordionItems.forEach((item) => {
 
     accordionHeader.addEventListener('click', () => {
         const openItem = document.querySelector('.accordion-open');
-        
+
         toggleItem(item);
 
         if (openItem && openItem !== item) {
@@ -134,8 +134,9 @@ window.addEventListener('load', () => {
    ========================================= */
 const routeImages = {
     cultural: [
-        { src: 'assets/hero.png', alt: 'Turismo Cultural - Monumento' },
-        { src: 'assets/hero_cultural_premium_1779234977188.png', alt: 'Cultura Local' }
+        { src: 'assets/Cultural1.jpeg', alt: 'Turismo Cultural 1' },
+        { src: 'assets/cultural2.jpeg', alt: 'Turismo Cultural 2' },
+        { src: 'assets/Cultural3.jpeg', alt: 'Turismo Cultural 3' }
     ],
     cervejeira: [
         { src: 'assets/rota_cervejeira_1779235020895.png', alt: 'Rota Cervejeira - Degustação' },
@@ -178,10 +179,10 @@ const btnFotos = document.querySelectorAll('.servico__btn-fotos');
 const openModal = (route) => {
     // Set Title
     modalTitle.textContent = routeTitles[route] || "Fotos da Rota";
-    
+
     // Clear old images
     modalGallery.innerHTML = '';
-    
+
     // Inject new images
     const images = routeImages[route];
     if (images && images.length > 0) {
@@ -195,7 +196,7 @@ const openModal = (route) => {
     } else {
         modalGallery.innerHTML = '<p style="text-align: center; color: var(--text-color-light);">Nenhuma foto disponível no momento.</p>';
     }
-    
+
     // Show Modal
     modal.classList.add('show-modal');
     document.body.style.overflow = 'hidden'; // Prevent background scrolling
