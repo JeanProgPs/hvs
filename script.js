@@ -41,6 +41,26 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 /* =========================================
+   HERO PARALLAX
+   ========================================= */
+const hero = document.querySelector('.hero');
+const heroBg = document.querySelector('.hero__bg');
+
+if (hero && heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const applyHeroParallax = () => {
+        const offset = window.scrollY * 0.18;
+        heroBg.style.transform = `translate3d(0, ${offset}px, 0)`;
+    };
+
+    window.addEventListener('scroll', () => {
+        window.requestAnimationFrame(applyHeroParallax);
+    }, { passive: true });
+
+    window.addEventListener('resize', applyHeroParallax);
+    applyHeroParallax();
+}
+
+/* =========================================
    ACCORDION FAQ
    ========================================= */
 const accordionItems = document.querySelectorAll('.accordion__item');
