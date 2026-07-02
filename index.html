@@ -35,13 +35,29 @@
     <!-- JSON-LD SEO -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "TouristGuide",
-      "name": "Henrique Silva",
-      "jobTitle": "Guia de Turismo",
-      "areaServed": "Teresópolis, Rio de Janeiro, Brasil"
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Henrique Silva",
+            "image": "https://guiahenriquevieira.vercel.app/assets/hero.png",
+            "url": "https://guiahenriquevieira.vercel.app/",
+            "telephone": "+55 21 97167-7158",
+            "description": "Guia de turismo em Teresópolis especializado em roteiros culturais, históricos e ecológicos na Serra dos Órgãos.",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Teresópolis",
+                "addressRegion": "RJ",
+                "addressCountry": "BR"
+            },
+            "areaServed": "Teresópolis, Rio de Janeiro, Brasil",
+            "sameAs": [
+                "https://instagram.com/hvs_tourist_guide_climber_2",
+                "https://wa.me/5521971677158"
+            ]
     }
     </script>
+        <!-- Favicon -->
+        <link rel="icon" href="assets/hero.png">
+        <link rel="manifest" href="/site.webmanifest">
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -92,7 +108,7 @@
         <section class="hero section" id="home">
             <div class="hero__bg">
                 <img src="assets/hero.png" alt="Henrique Guia Cultural" class="hero__img"
-                    loading="eager">
+                    loading="eager" srcset="assets/hero.png 1200w" sizes="100vw">
                 <div class="hero__overlay"></div>
             </div>
             <div class="hero__container container grid">
@@ -164,7 +180,7 @@
                         </div>
                         <h3 class="servico__title">Turismo Cultural</h3>
                         <p class="servico__description">Descubra a história, arquitetura e os marcos culturais da região através de um roteiro fascinante e imersivo.</p>
-                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="cultural" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
+                        <button type="button" class="btn btn--secondary btn--small servico__btn-fotos" data-route="cultural" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
 
                     <!-- Serviço 2: Pedagógico -->
@@ -175,7 +191,7 @@
                         <h3 class="servico__title">Turismo Pedagógico</h3>
                         <p class="servico__description">Roteiros educativos nacionais e internacionais voltados para
                             estudantes e grupos, com foco em história e práticas sustentáveis.</p>
-                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="pedagogico" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
+                        <button type="button" class="btn btn--secondary btn--small servico__btn-fotos" data-route="pedagogico" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
 
                     <!-- Serviço 3: Rural -->
@@ -186,7 +202,7 @@
                         <h3 class="servico__title">Turismo Rural</h3>
                         <p class="servico__description">Uma imersão na vida do campo, com visitas a antigas fazendas,
                             colheitas e um mergulho nas tradições do interior.</p>
-                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="rural" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
+                        <button type="button" class="btn btn--secondary btn--small servico__btn-fotos" data-route="rural" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
 
                     <!-- Serviço 4: Cervejeira -->
@@ -197,7 +213,7 @@
                         <h3 class="servico__title">Rota Cervejeira</h3>
                         <p class="servico__description">Visita às melhores cervejarias artesanais da região, com
                             degustação guiada e imersão na cultura cervejeira local.</p>
-                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="cervejeira" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
+                        <button type="button" class="btn btn--secondary btn--small servico__btn-fotos" data-route="cervejeira" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
 
                     <!-- Serviço 5: Queijo -->
@@ -208,7 +224,7 @@
                         <h3 class="servico__title">Rota do Queijo</h3>
                         <p class="servico__description">Conheça fazendas produtoras de queijos artesanais premiados,
                             entenda o processo de cura e saboreie produtos únicos.</p>
-                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="queijo" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
+                        <button type="button" class="btn btn--secondary btn--small servico__btn-fotos" data-route="queijo" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
 
                     <!-- Serviço 6: Aves -->
@@ -219,7 +235,7 @@
                         <h3 class="servico__title">Observação de Aves</h3>
                         <p class="servico__description">Caminhadas silenciosas pelas matas nativas para avistar e
                             fotografar a rica biodiversidade de pássaros da nossa região.</p>
-                        <button class="btn btn--secondary btn--small servico__btn-fotos" data-route="aves" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
+                        <button type="button" class="btn btn--secondary btn--small servico__btn-fotos" data-route="aves" style="margin-top: 1rem; width: 100%; border-color: var(--first-color); color: var(--first-color);">Ver Fotos</button>
                     </article>
                 </div>
             </div>
@@ -265,11 +281,11 @@
                 </div>
                 <div class="galeria__container grid">
                     <img src="assets/cervejeira1.png" alt="Rota Cervejeira" class="galeria__img"
-                        loading="lazy">
+                        loading="lazy" srcset="assets/cervejeira1.png 600w" sizes="(max-width: 768px) 100vw, 33vw">
                     <img src="assets/queijo1.png" alt="Rota do Queijo na Fazenda"
-                        class="galeria__img" loading="lazy">
+                        class="galeria__img" loading="lazy" srcset="assets/queijo1.png 600w" sizes="(max-width: 768px) 100vw, 33vw">
                     <img src="assets/aves1.png" alt="Observação de Aves"
-                        class="galeria__img galeria__img--large" loading="lazy">
+                        class="galeria__img galeria__img--large" loading="lazy" srcset="assets/aves1.png 900w" sizes="(max-width: 768px) 100vw, 66vw">
                 </div>
             </div>
         </section>
@@ -428,7 +444,7 @@
     <div id="photo-modal" class="modal">
         <div class="modal__overlay" id="modal-overlay"></div>
         <div class="modal__content">
-            <button class="modal__close" id="modal-close" aria-label="Fechar Modal"><i class='bx bx-x'></i></button>
+            <button type="button" class="modal__close" id="modal-close" aria-label="Fechar Modal"><i class='bx bx-x'></i></button>
             <h3 class="modal__title" id="modal-title">Fotos da Rota</h3>
             <div class="modal__gallery" id="modal-gallery">
                 <!-- Imagens serão injetadas aqui -->
@@ -439,7 +455,7 @@
     <!-- Fullscreen Image Modal -->
     <div id="fullscreen-modal" class="modal fullscreen-modal">
         <div class="modal__overlay" id="fullscreen-overlay"></div>
-        <button class="modal__close fullscreen-close" id="fullscreen-close" aria-label="Fechar Imagem"><i class='bx bx-x'></i></button>
+        <button type="button" class="modal__close fullscreen-close" id="fullscreen-close" aria-label="Fechar Imagem"><i class='bx bx-x'></i></button>
         <img id="fullscreen-image" src="" alt="Imagem em tela cheia" class="fullscreen-image">
     </div>
 
