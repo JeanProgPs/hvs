@@ -156,8 +156,8 @@ const routeImages = {
         { src: 'assets/pedagogia2.png', alt: 'Grupo em Atividade' }
     ],
     rural: [
-        { src: 'assets/sobre_mim.jpg', alt: 'Turismo Rural - Fazenda' },
-        { src: 'assets/hero_cultural_premium_1779234977188.png', alt: 'Vivência no Campo' }
+        { src: 'assets/rural1.jpeg', alt: 'Turismo Rural - Fazenda' },
+        { src: 'assets/Rural2.jpeg', alt: 'Turismo Rural - Vivência no Campo' }
     ],
     aves: [
         { src: 'assets/aves1.png', alt: 'Observação de Aves na Mata' },
